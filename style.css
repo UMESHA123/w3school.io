@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-weight: 550;
+    font-size: 10px;
+    font-weight: 400;
+}
+:root{
+    --header-color:#282A35;
+    --header-text-color:white;
+    --intro-background-color:#D9EEE1;
+    --code-container-background-color:#E7E9EB;
+    --primary-color:#04AA6D;
+    --code-color:brown;
+    --background-color:#ffffff;
+    --aside-background-color:rgb(230, 230, 230);
+    --code-container-editer-background-color:white;
+    --code-container-editer-color:black;
+    --dark-mode-text-white-color:rgb(31, 29, 29);
+    --reference-button-text-color:rgb(32, 31, 31);
+    --aside-text-color:rgb(31, 29, 29);
+    --advitez-background:rgb(255, 254, 254);
+}
+.dark-mode{
+    --header-color:#282A35;
+    --header-text-color:white;
+    --intro-background-color:#242525;
+    --code-container-background-color:#272727;
+    --primary-color:#04AA6D;
+    --code-color:brown;
+    --background-color:black;
+    --dark-mode-text-white-color:white;
+    --reference-button-text-color:white;
+    --aside-text-color:white;
+    --aside-background-color:black;
+    --advitez-background:black;
+    --code-container-editer-background-color:#282A35;
+    --code-container-editer-color:white;
+}
+.advitez{
+    background-color: var(--advitez-background);
+}
+
+.main-header{
+    width: 100%;
+    background-color: var(--header-color);
+}
+
+.header-item{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    height: 30px;
+    align-items: center;
+    color: var(--header-text-color);
+   
+}
+
+.header-item li:hover{
+    background-color: #04AA6D;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+.aside-area{
+    background-color:var(--aside-background-color);
+    height: 93vh;
+    width: 150px;
+    padding-left: 10px;
+    overflow-y: scroll;
+    color: var(--aside-text-color);
+
+}
+.aside-area ul li{
+    list-style: none;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 11px;
+}
+.main-area{
+    background-color: var(--background-color);
+    height: 93vh;
+    color: var(--dark-mode-text-white-color);
+    overflow-y: scroll;
+}
+.h3-heading{
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: 550;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.main-heading{
+    padding-left: 20px;
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.flex-button{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    border: none;
+    background-color: #04AA6D;
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+}
+.button:hover{
+    background-color: #037c50;
+}
+.into-card{
+    background-color:  var(--intro-background-color);
+    padding-top: 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+p{
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 25px;
+    
+}
+
+.intro{
+    width: 200px;
+}
+.black{
+    background-color: #282A35;
+}
+.black:hover{
+    background-color: #161820;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0.001px solid rgb(230, 227, 227);
+}
+
+.code-container{
+    background-color: var(--code-container-background-color);
+    padding-bottom: 10px;
+}
+.code-container-editer{
+    background-color: var(--code-container-editer-background-color);
+    border-left: 3px solid var(--primary-color);
+    font-weight: 400;
+    margin: 10px 20px 20px 20px;
+    padding: 10px;
+    color: var(--code-container-editer-color);
+}
+.code-text-red{
+    color: red;
+    font-weight: 400;
+}
+.code-color{
+    color: var(--code-color);
+    font-size: 10px;
+    font-weight: 400;
+}
+.h2-heading{
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.gary{
+    background-color: var(--header-color);
+}
+.input{
+    width: 30px;
+}
+.black-color{
+    background-color: #161820;
+    color: white;
+    margin: 20px 0px 20px 0px;
+}
+.try-example-editer{
+    background-color: var(--code-container-background-color);
+    padding: 20px;
+    font-size: 13px;
+}
+.refernces-button{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    margin: 20px;
+}
+.refernces-button button{
+    background-color: var(--code-container-background-color);
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+    color: var(--reference-button-text-color);
+}
+.certificate-card{
+    background-color: black;
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+    position: relative;
+    height: 60vh;
+    color: rgb(223, 179, 194);
+}
+.round-edze{
+    width: 20%;
+    margin: 10px 20px 20px 20px;
+    border-radius: 50px;
+}
+.footer-black{
+    width: 90%;
+    background-color: var(--header-color);
+}
+
+.footer-button{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+
+
+
+.footer-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+.card-1{
+    font-size: 10px;
+    margin: 1px;
+    padding: 0;    
+}
+.h5{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+p{
+    line-height: 15px;
+    
+}
+footer{
+    margin: 20px;
+}
+.forum{
+    display: flex;
+    justify-content: end;
+    font-size: 11px;
+    margin: 10px;
+}
+.footer-cpy{
+    color: gray;
+    font-size: 10px;
+    margin:10px 40px 10px 40px;
+    text-align: center;
+}
+@media only screen and (max-width:600px){
+    
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "main-area";
+    }
+    .main-area{
+        grid-area: main-area;
+    }
+    .footer-button{
+        display: inline-block;
+        width: 100%;
+    }
+    .footer-card{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    .card-1{
+        align-items: center; 
+        margin: 10px;   
+    }
+
+}
