@@ -69,7 +69,7 @@
 .aside-area{
     background-color:var(--aside-background-color);
     height: 93vh;
-    width: 150px;
+    width: 100%;
     padding-left: 10px;
     overflow-y: scroll;
     color: var(--aside-text-color);
