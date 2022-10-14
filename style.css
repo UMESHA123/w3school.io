@@ -86,6 +86,7 @@
     height: 93vh;
     color: var(--dark-mode-text-white-color);
     overflow-y: scroll;
+    position:sticky;
 }
 .h3-heading{
     font-weight: 400;
